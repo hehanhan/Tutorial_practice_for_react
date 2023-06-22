@@ -81,22 +81,11 @@ const Index: FC<PageProps> = ({ hero, dispatch }) => {
   };
 
   return (
-    <div className={styles.normal}>
-      <Button
-        style={{
-          position: 'absolute',
-          left: 453,
-          top: 500,
-          width: 240,
-          height: 71,
-        }}
-        variant="contained"
-        size="large"
-        onClick={() => (location.href = '/hero')}
-      >
-        Go Now
-      </Button>
-    </div>
+    <div
+      className={styles.normal}
+      style={{ cursor: 'pointer' }}
+      onClick={() => (location.href = '/hero')}
+    />
   );
 };
 
